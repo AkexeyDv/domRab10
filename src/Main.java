@@ -11,5 +11,12 @@ public class Main {
         //Задание 2
         String upperName=fullName.toUpperCase();
         System.out.println("ФДанные Ф. И. О. сотрудника для заполнения отчета — "+upperName);
+
+        //Задание 3
+        fullName="Иванов Семён Семёнович";
+        char oldChar='ё';
+        char newChar='е';
+        String korrectName=fullName.replace(oldChar,newChar);
+        System.out.println("Данные Ф.И.О. сотрудника - "+korrectName);
     }
 }
