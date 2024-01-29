@@ -16,7 +16,12 @@ public class Main {
         fullName="Иванов Семён Семёнович";
         char oldChar='ё';
         char newChar='е';
+        char oldCharBig='Ё';
+        char newCharBig='Е';
         String korrectName=fullName.replace(oldChar,newChar);
+        /*На случай, если ФИО большими буквами. Память это не займет, ведь хранится только
+        один экземпляр строки*/
+        korrectName=korrectName.replace(oldCharBig,newCharBig);
         System.out.println("Данные Ф.И.О. сотрудника - "+korrectName);
     }
 }
